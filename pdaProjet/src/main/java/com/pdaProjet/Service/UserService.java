@@ -1,6 +1,7 @@
+/*
 package com.pdaProjet.Service;
 
-import com.sun.jmx.mbeanserver.Repository;
+import com.pdaProjet.Repository.RepoUser;
 
 public class UserService {
     private RepoUser repoUser = new RepoUser();
@@ -8,3 +9,4 @@ public class UserService {
           return  repoUser.login(email,password);
     }
 }
+*/

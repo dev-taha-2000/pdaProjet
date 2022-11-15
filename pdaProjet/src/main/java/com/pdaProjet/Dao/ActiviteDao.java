@@ -8,14 +8,15 @@ import jakarta.persistence.EntityTransaction;
 
 public class ActiviteDao {
 
-    public void insertEntity(Activite activité){
+    public Activite insertEntity(Activite activite){
 
         EntityManager entityManager =JpaUtil.getEntityManagerFactory().createEntityManager();
         EntityTransaction entityTransaction = entityManager.getTransaction();
         entityTransaction.begin();
-        entityManager.persist(activité);
+        entityManager.persist(activite);
         entityManager.getTransaction().commit();
         entityManager.close();
+        return activite;
     }
 
     public void findEntity(long id) {

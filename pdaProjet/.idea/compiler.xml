@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="pdaProjet" />
+        <module name="pdaLastVersion" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="pdaProjet" target="1.8" />
+      <module name="pdaLastVersion" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -34,6 +34,7 @@ public class Activite {
     }
 
 
+
     public Activite() {
         super();
     }
@@ -75,5 +76,30 @@ public class Activite {
         this.date_defin = date_defin;
     }
 
+    public List<Participants> getParticipants() {
+        return participants;
+    }
 
+    public void setParticipants(List<Participants> participants) {
+        this.participants = participants;
+    }
+
+    public Etat getEtat() {
+        return etat;
+    }
+
+    public void setEtat(Etat etat) {
+        this.etat = etat;
+    }
+
+    @Override
+    public String toString() {
+        return "Activite{" +
+                ", titre='" + titre + '\'' +
+                ", description='" + description + '\'' +
+                ", date_debut='" + date_debut + '\'' +
+                ", date_defin='" + date_defin + '\'' +
+                ", etat=" + etat.getId() +
+                '}';
+    }
 }

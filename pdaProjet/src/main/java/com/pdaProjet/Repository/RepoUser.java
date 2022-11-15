@@ -1,12 +1,15 @@
+/*
 package com.pdaProjet.Repository;
 import com.pdaProjet.Entitys.User;
+import com.pdaProjet.Util.JpaUtil;
 import com.mysql.cj.Session;
 import com.pdaProjet.Util.JpaUtil;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
 import  org.hibernate.query.Query;
-public class RepoUser {
+import sun.security.util.Password;
 
+public class RepoUser {
     public int login (String email , String password){
         User user = new RepoUser().findByEmail(email);
         if(user.getEmail() == null){return 0;}
@@ -31,3 +34,4 @@ public class RepoUser {
         return user;
     }
 }
+*/
